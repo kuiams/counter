@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    * {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-color: #000000;
+      color: #ffffff;
+
+
+    }
+
+    .main {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .time {
+      /* background-color: #fff; */
+      display: flex;
+
+
+      position: relative;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-size: 100px;
+    }
+
+    #h,
+    #min,
+    #sec {
+      border-radius: 20px;
+      padding: 2vh 4vw;
+      min-height: 10vh;
+      min-width: 1px;
+      font-size: 24vh;
+      background-color: #4e4d4d3a;
+    }
+
+    .btns {
+      margin-top: 15vh;
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      padding-left: 7vw;
+      padding-right: 7vw;
+      justify-content: space-between;
+      gap: 100px;
+      /* background-color: #fff; */
+      align-items: center;
+      font-size: 40px;
+    }
+
+    .btns button {
+      background-color: #5c5b5b86;
+      border: none;
+      padding: 2vh 5vw;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 35px;
+      text-transform: capitalize;
+    }
+
+    .day {
+      /* background-color: #fff; */
+
+      font-size: 24px;
+      padding: 5vh 5vw;
+    }
+
+    #date {
+      text-transform: capitalize;
+    }
+
+
+    @media screen and (max-width: 900px) {
+
+      .time {
+        /* background-color: #fff; */
+        display: flex;
+
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        gap: 5px;
+
+        font-size: 80px;
+      }
+
+      #h,
+      #min,
+      #sec {
+        border-radius: 20px;
+        padding: 4vh 4vw;
+        min-height: 10vh;
+        min-width: 1px;
+        font-size: 6vh;
+        background-color: #4e4d4d3a;
+      }
+
+      .btns {
+
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        justify-content: space-between;
+        gap: 12px;
+        /* background-color: #fff; */
+        align-items: center;
+
+      }
+
+      .btns button {
+        background-color: #5c5b5b86;
+        border: none;
+        width: 50%;
+        padding: 2vh 5vw;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .day {
+        /* background-color: #fff; */
+
+        font-size: 20px;
+        padding: 5vh 5vw;
+      }
+
+      #date {
+        text-transform: capitalize;
+
+      }
+
+      .input {
+        width: 52vw;
+        height: 5vh;
+        margin-top: 2.5vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="day">
+    <h3 id="date">Enter the date</h3>
+    <div class="set">
+      <input class="input" type="text" id="input">
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="main">
+    <div class="time">
+      <h3 id="h">00</h3>
+
+      <p>:</p>
+      <h3 id="min">00</h3>
+
+      <p>:</p>
+      <h3 id="sec">00</h3>
+
+    </div>
+    <div class="btns">
+
+      <button id="srt">start</button>
+      <button id="sop">stop</button>
+      <button id="rst">reset</button>
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
